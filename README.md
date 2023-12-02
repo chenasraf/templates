@@ -23,9 +23,16 @@ npx simple-scaffold@latest -gh chenasraf/templates#editorfiles.js -
 ## Available Scaffolds
 
 - **react**  
-  Available types: atom, molecule, organism, page, utils*
+  Available types: atom, molecule, organism, page, utils\*
 
   \* Name is ignored, use anything
 
 - **editorfiles**  
   .editorfile, prettier config, and eslintignore
+
+- **github**  
+  Generic files for GitHub, regardless of project type - e.g. FUNDING.yml
+
+- **github-pnpm**  
+  GitHub workflows and a semantic-release config for new projects. `--name` is used as tgz package
+  name for PNPM build
