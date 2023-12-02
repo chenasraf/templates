@@ -34,5 +34,4 @@ npx simple-scaffold@latest -gh chenasraf/templates#editorfiles.js -
   Generic files for GitHub, regardless of project type - e.g. FUNDING.yml
 
 - **github-pnpm**  
-  GitHub workflows and a semantic-release config for new projects. `--name` is used as tgz package
-  name for PNPM build
+  GitHub workflows and a semantic-release config for new projects.
