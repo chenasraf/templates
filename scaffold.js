@@ -4,7 +4,7 @@ const BASE = 'gen/react'
  * @param {string} folder
  * @returns import('simple-scaffold').ScaffoldConfig
  */
-const gen = (folder) => {
+const reactComp = (folder) => {
   return {
     templates: [`${BASE}/component`],
     output: `src/components/${folder}`,
@@ -16,14 +16,29 @@ const gen = (folder) => {
 
 /** @type {import('simple-scaffold').ScaffoldConfigFile} */
 module.exports = {
-  atom: gen('atoms'),
-  molecule: gen('molecules'),
-  organism: gen('organisms'),
-  page: {
+  editorfiles: {
+    templates: ['gen/editorfiles'],
+    output: '.',
+    name: '-',
+  },
+  github: {
+    templates: ['gen/github'],
+    output: '.',
+    name: '-',
+  },
+  'github.pnpm': {
+    templates: ['gen/github-pnpm'],
+    output: '.',
+    name: '-',
+  },
+  'react.atom': reactComp('atoms'),
+  'react.molecule': reactComp('molecules'),
+  'react.organism': reactComp('organisms'),
+  'react.page': {
     templates: [`${BASE}/page`],
     output: `src/pages`,
   },
-  utils: {
+  'react.utils': {
     templates: [`${BASE}/utils`],
     output: `src/utils`,
     name: '<utils>',
