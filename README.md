@@ -1,5 +1,8 @@
 # Simple Scaffold Templates
 
+A set of generator templates for use with
+[Simple Scaffold](https://github.com/chenasraf/simple-scaffold).
+
 ## Usage
 
 No need to install anything but Node.
@@ -7,17 +10,17 @@ No need to install anything but Node.
 Run these commands to generate scaffolds of various types
 
 ```shell
-npx simple-scaffold@latest -gh chenasraf/templates#<name>.js -k <key> <name>
+npx simple-scaffold@latest -gh chenasraf/templates -k <key> <name>
 ```
 
 ### Examples
 
 ```shell
 # react component
-npx simple-scaffold@latest -gh chenasraf/templates#react.js -k atom MyButton
+npx simple-scaffold@latest -gh chenasraf/templates -k atom MyButton
 
 # editorfiles (prettier, editorfile, eslintignore, etc)
-npx simple-scaffold@latest -gh chenasraf/templates#editorfiles.js -
+npx simple-scaffold@latest -gh chenasraf/templates -
 ```
 
 ## Available Scaffolds
@@ -28,7 +31,7 @@ npx simple-scaffold@latest -gh chenasraf/templates#editorfiles.js -
   \* Name is ignored, use anything
 
 - **editorfiles**  
-  .editorfile, prettier config, and eslintignore
+  .editorfile, prettier config, and eslint.config.mjs
 
 - **github**  
   Generic files for GitHub, regardless of project type - e.g. FUNDING.yml
