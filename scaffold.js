@@ -16,8 +16,13 @@ const reactComp = (folder) => {
 
 /** @type {import('simple-scaffold').ScaffoldConfigFile} */
 module.exports = {
-  editorfiles: {
+  editorfile: {
     templates: ['gen/editorfiles'],
+    output: '.',
+    name: '-',
+  },
+  'typescript.lints': {
+    templates: ['gen/ts-lints'],
     output: '.',
     name: '-',
   },

@@ -10,17 +10,19 @@ No need to install anything but Node.
 Run these commands to generate scaffolds of various types
 
 ```shell
-npx simple-scaffold@latest -gh chenasraf/templates -k <key> <name>
+npx simple-scaffold@latest -g chenasraf/templates -k <key> <name>
+# list all available templates:
+npx simple-scaffold@latest -g chenasraf/templates list
 ```
 
 ### Examples
 
 ```shell
 # react component
-npx simple-scaffold@latest -gh chenasraf/templates -k atom MyButton
+npx simple-scaffold@latest -g chenasraf/templates -k react.atom MyButton
 
 # editorfiles (prettier, editorfile, eslintignore, etc)
-npx simple-scaffold@latest -gh chenasraf/templates -
+npx simple-scaffold@latest -g chenasraf/templates -
 ```
 
 ## Available Scaffolds
