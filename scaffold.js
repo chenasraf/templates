@@ -17,7 +17,7 @@ const reactComp = (folder) => {
 /** @type {import('simple-scaffold').ScaffoldConfigFile} */
 module.exports = {
   editorfile: {
-    templates: ['gen/editorfiles'],
+    templates: ['gen/editorfile'],
     output: '.',
     name: '-',
   },
